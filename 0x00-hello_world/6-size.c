@@ -3,7 +3,7 @@
 /**
  * main - prints the size of various types
  * description: Size is not grandeur, and territory does not make a nation
- * Returne: Always 0 (Success)
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
