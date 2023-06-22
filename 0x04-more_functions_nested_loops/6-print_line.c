@@ -14,7 +14,7 @@ int main(void)
 	{
 		int a;
 
-		for (a = 1; <= n; a++)
+		for (a = 1; a <= n; a++)
 		{
 			_putchar('_');
 		}
