@@ -5,6 +5,7 @@
  *
  * Return: Always 0.
 */
+
 void print_line(int n)
 {
 	if (n <= 0)
@@ -12,12 +13,13 @@ void print_line(int n)
 		_putchar('\n');
 	} else
 	{
-		int a;
+		int e;
 
-		for (a = 1; a <= n; a++)
+		for (e = 1; e <= n; e++)
 		{
 			_putchar('_');
 		}
 		_putchar('\n');
 	}
+
 }
