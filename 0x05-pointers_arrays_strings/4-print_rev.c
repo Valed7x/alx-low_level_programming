@@ -4,17 +4,21 @@
 
 /**
  * print_rev - reverse the string
- * @s: the string.
- * Return: void.
+ *
+ * @s: the string
+ *
+ * Return: void 0
  */
+
 void print_rev(char *s)
+
 {
-	int i, l;
+	int a, l;
 
 	l = strlen(s);
-	for (i = l - 1; i >= 0; i--)
+	for (a = l - 1; a >= 0; a--)
 	{
-		printf("%c", s[i]);
+		printf("%c", s[a]);
 	}
 	printf("\n");
 }
