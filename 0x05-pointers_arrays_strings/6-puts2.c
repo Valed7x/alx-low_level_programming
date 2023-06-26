@@ -5,23 +5,25 @@
  *
  * followed by a new line.
  *
- * @str: string to print the chars from
+ * @str: string to print the chars from.
+ *
+ * Return: 0
 */
+
 void puts2(char *str)
-
 {
-	int num, num1;
+	int len, i;
 
-	num = 0;
+	len = 0;
 
-	while (str[num] != '\0')
+	while (str[len] != '\0')
 	{
-		num++;
+		len++;
 	}
 
-	for (num1 = 0; num1 < num; num1 += 2)
+	for (i = 0; i < len; i += 2)
 	{
-		_putchar(str[num1]);
+		_putchar(str[i]);
 	}
 
 	_putchar('\n');
