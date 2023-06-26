@@ -3,14 +3,11 @@
 #include <string.h>
 
 /**
- * rev_string - reverse the string
- *
- * @s: the string
- *
- * Return: void 0
-*/
-
-void rev_string(char *s)
+ * print_rev - reverse the string
+ * @s: the string.
+ * Return: void.
+ */
+void print_rev(char *s)
 {
 	int i, l;
 
@@ -20,4 +17,4 @@ void rev_string(char *s)
 		printf("%c", s[i]);
 	}
 	printf("\n");
-{
+}
