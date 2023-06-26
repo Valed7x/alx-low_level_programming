@@ -12,23 +12,12 @@
 
 void rev_string(char *s)
 {
-	char tmp;
-	int a, num1, num2;
+	int i, l;
 
-	num1 = 0;
-	num2 = 0;
-
-	while (s[nim1] != '\0')
+	l = strlen(s);
+	for (i = l - 1; i >= 0; i--)
 	{
-		num1++;
+		printf("%c", s[i]);
 	}
-
-	num2 = num1 - 1;
-
-	for (a = 0; a < num1 / 2; a++)
-	{
-		tmp = s[a];
-		s[a] = s[num2;
-		s[num2--] = tmp;
-	}
-}
+	printf("\n");
+{
