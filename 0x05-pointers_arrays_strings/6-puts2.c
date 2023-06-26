@@ -12,7 +12,7 @@ void puts2(char *str)
 {
 	int num, num1;
 
-	nmu = 0;
+	num = 0;
 
 	while (str[num] != '\0')
 	{
