@@ -13,17 +13,23 @@
 void rev_string(char *s)
 
 {
-	int a = 0, e = 0;
-	char temp;
+	char tmp;
+	int a, num, num1;
 
-	while (s[e++])
+	num = 0;
+	num1 = 0;
+
+	while (s[num] != '\0')
 	{
-		a++;
-		for (e = a - 1; e >= a / 2; e--)
-		{
-			temp = s[e];
-			s[e] = s[a - e - 1];
-			s[a - e - 1] = temp;
-		}
+		num++;
+	}
+
+	num1 = num - 1;
+
+	for (a = 0; a < num / 2; a++)
+	{
+		tmp = s[a];
+		s[a] = s[num1];
+		s[num1--] = tmp;
 	}
 }
