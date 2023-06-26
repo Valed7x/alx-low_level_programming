@@ -13,16 +13,16 @@
 void puts2(char *str)
 
 {
-	int i;
-	int j = 0;
+	int a;
+	int b = 0;
 
-	while (str[j] != '\0')
+	while (str[b] != '\0')
 	{
-		j++;
+		b++;
 	}
-	for (i = 0; i < j; i += 2)
+	for (a = 0; a < b; a += 2)
 	{
-		putchar(str[i]);
+		putchar(str[a]);
 	}
 	putchar('\n');
 }
