@@ -19,7 +19,7 @@ int main(void)
 	char a;
 
 	srand(time(NULL));
-	while (num <= 2513)
+	while (num <= 2645)
 	{
 		a = rand() % 123;
 		num += a;
