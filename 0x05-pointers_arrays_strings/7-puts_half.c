@@ -1,28 +1,25 @@
 #include "main.h"
 
 /**
- *puts_half - prints hamfe  of a string
- *@str: A pointer to an int that will be change
+ * puts_half - prints half of a string
+ * @str: input
  */
 
 void puts_half(char *str)
-
 {
-int i, last;
+	int a, n, length;
 
-i = 0;
-while (str[i] != '\0')
-{
-i++;
-}
+	length = 0;
 
-last = (i + 1) / 2;
+	for (a = 0; str[a] != '\0'; a++)
+		length++;
 
-for (i = last; str[i]; i++)
-{
-_putchar (str[i]);
-}
+	n = (length / 2);
 
-_putchar ('\n');
+	if ((length % 2) == 1)
+		n = ((length + 1) / 2);
 
+	for (a = n; str[a] != '\0'; a++)
+		_putchar(str[a]);
+	_putchar('\n');
 }
