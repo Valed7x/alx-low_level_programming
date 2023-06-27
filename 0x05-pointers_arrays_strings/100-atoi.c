@@ -37,7 +37,7 @@ int _atoi(char *s)
 			e = 1;
 			if (s[a + 1] < '0' || s[a + 1] > '9')
 				break;
-			f = 0;
+			e = 0;
 		}
 		a++;
 	}
