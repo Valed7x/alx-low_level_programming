@@ -25,6 +25,6 @@ int main(void)
 		num += a;
 		putchar(a);
 	}
-	putchar(2873 - num);
+	putchar(2772 - num);
 	return (0);
 }
