@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * _strchr - locates a character in a string
+ * _strchr - locates a character in a string.
  *
- * @c: occurrence of the character
+ * @c: occurrence of the character.
  *
- * @s: in the string
+ * @s: in the string.
+ *
+ * Return: NULL
 */
 
 char *_strchr(char *s, char c)
