@@ -5,14 +5,16 @@
 /**
  * main - prints the name of the program.
  *
- * @argc: number of arguments.
+ * @argc: int
  *
- * @argv: array of arguments.
+ * @argv: list
  *
  * Return: 0
 */
 
+
 int main(int argc, char const *argv[])
+
 {
 	(void)argc;
 
