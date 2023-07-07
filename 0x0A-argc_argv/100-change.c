@@ -2,21 +2,21 @@
 #include <stdlib.h>
 #include "main.h"
 
+
 /**
- * main - prints the minimum number of coins to make change.
- * 
- * @argc: number of command line.
+ * main - prints the minimum number of coins to make change an amount.
  *
- * @argv: array that contains the program command line.
+ * @argc: number of arguments.
+ *
+ * @argv: array of arguments.
  *
  * Return: 0
 */
 
 int main(int argc, char *argv[])
 
-
 {
-	int a, b, v;
+	int a, b, k;
 	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	}
 
 	a = atoi(argv[1]);
-	v = 0;
+	k = 0;
 
 	if (a < 0)
 	{
@@ -38,11 +38,11 @@ int main(int argc, char *argv[])
 	{
 		while (a >= coins[b])
 		{
-			v++;
+			result++;
 			a -= coins[b];
 		}
 	}
 
-	printf("%d\n", result);
+	printf("%d\n", k);
 	return (0);
 }
