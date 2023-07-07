@@ -1,24 +1,12 @@
-#include "main.h"
-
+#include <stdio.h>
 /**
- * main - main function
- * @argc: argument count
- * @argv: pointer to string, and also argument vector
- *
- * Return: Alway return 0.
+ * main - prints its name, followed by a new line.
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
+ * Return: 0 - success.
  */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	int index1 = 0, index2;
-
-	while (index1 < argc)
-	{
-		for (index2 = 0; argv[index1][index2]; index2++)
-		{
-			_putchar(argv[index1][index2]);
-		}
-		index1++;
-	}
-	_putchar('\n');
+	printf("%s\n", argv[0]);
 	return (0);
 }
