@@ -1,18 +1,24 @@
-#include <unistd.h>
-
+#include "main.h"
 
 /**
- * _putchar - writes the character c to stdout.
+ * main - main function
+ * @argc: argument count
+ * @argv: pointer to string, and also argument vector
  *
- * @c: The character to print.
- *
- * Return: On success 1.
- *
- * On error, -1 is returned, and errno is set appropriately.
-*/
-
-int _putchar(char c)
-
+ * Return: Alway return 0.
+ */
+int main(int argc, char *argv[])
 {
-	return (write(1, &c, 1));
+	int index1 = 0, index2;
+
+	while (index1 < argc)
+	{
+		for (index2 = 0; argv[index1][index2]; index2++)
+		{
+			_putchar(argv[index1][index2]);
+		}
+		index1++;
+	}
+	_putchar('\n');
+	return (0);
 }
