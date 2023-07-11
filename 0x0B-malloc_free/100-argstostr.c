@@ -27,7 +27,7 @@ char *argstostr(int ac, char **av)
 		if (av[b] == 0)
 			return (0);
 
-		for (e = 0; av[i][e] != '\0'; e++)
+		for (e = 0; av[b][e] != '\0'; e++)
 			a++;
 		a++;
 	}
@@ -49,7 +49,7 @@ char *argstostr(int ac, char **av)
 			o++;
 			e = 0;
 		}
-		if (o < c - 1)
+		if (o < a - 1)
 			call[o] = av[b][e];
 	}
 	call[o] = '\0';
