@@ -71,7 +71,7 @@ char **strtow(char *str)
 				if (bat == 0)
 					return (0);
 				while (t < end)
-					*bat++ = str[start++];
+					*bat++ = str[t++];
 				*bat = '\0';
 				matrix[n] = bat - s;
 				n++;
