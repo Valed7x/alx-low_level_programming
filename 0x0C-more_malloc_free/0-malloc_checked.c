@@ -14,23 +14,26 @@
  * Return: NULL 0
 */
 
-
 char *create_array(unsigned int size, char c)
-
 {
-	char *eb;
-	unsigned int z;
+	char *p;
+	unsigned int i = 0;
 
 	if (size == 0)
+		return (NULL);
+
+	p = (char *) malloc(sizeof(char) * size);
+
+	if (p == NULL)
 		return (0);
 
-	eb = malloc(sizeof(c) * size);
+	while (i < size)
+	{
+		*(p + i) = c;
+		i++;
+	}
 
-	if (eb == 0)
-		return (0);
+	*(p + i) = '\0';
 
-	for (z = 0; z < size; z++)
-		eb[z] = c;
-
-	return (eb);
+	return (p);
 }
