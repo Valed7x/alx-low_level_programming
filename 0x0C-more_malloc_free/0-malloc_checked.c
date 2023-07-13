@@ -22,12 +22,12 @@ char *create_array(unsigned int size, char c)
 	unsigned int z;
 
 	if (size == 0)
-		return (NULL);
+		return (0);
 
 	eb = malloc(sizeof(c) * size);
 
-	if (eb == NULL)
-		return (NULL);
+	if (eb == 0)
+		return (0);
 
 	for (z = 0; z < size; z++)
 		eb[z] = c;
