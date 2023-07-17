@@ -2,18 +2,22 @@
 #include <stdlib.h>
 
 /**
- * new_dog - creates a new dog.
+ * new_dog - creates a new variable of type dog_t.
+ *
  * @name: name of the dog.
+ *
  * @age: age of the dog.
+ *
  * @owner: owner of the dog.
  *
- * Return: struct dog.
- * if fails, returns NULL.
- */
+ * Return: NULL 0
+*/
+
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *p_dog;
-	int i, lname, lowner;
+	int z, lname, lowner;
 
 	p_dog = malloc(sizeof(*p_dog));
 	if (p_dog == NULL || !(name) || !(owner))
@@ -39,15 +43,15 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	for (i = 0; i < lname; i++)
-		p_dog->name[i] = name[i];
-	p_dog->name[i] = '\0';
+	for (z = 0; z < lname; z++)
+		p_dog->name[z] = name[z];
+	p_dog->name[z] = '\0';
 
 	p_dog->age = age;
 
-	for (i = 0; i < lowner; i++)
-		p_dog->owner[i] = owner[i];
-	p_dog->owner[i] = '\0';
+	for (z = 0; z < lowner; z++)
+		p_dog->owner[z] = owner[z];
+	p_dog->owner[z] = '\0';
 
 	return (p_dog);
 }
