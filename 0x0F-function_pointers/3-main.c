@@ -45,5 +45,5 @@ int main(int argc, char *argv[])
 	w = atoi(argv[3]);
 
 	printf("%d\n", operation(z, w));
-	return (NULL);
+	return (0);
 }
