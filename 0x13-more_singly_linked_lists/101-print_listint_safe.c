@@ -14,7 +14,7 @@ size_t print_listint_safe(const listint_t *head)
 
 {
 	const listint_t *lok = NULL;
-	const listint_t *l_n = NULL;
+	const listint_t *lis = NULL;
 	size_t counter = 0;
 	size_t new_n;
 
@@ -24,16 +24,16 @@ size_t print_listint_safe(const listint_t *head)
 		printf("[%p] %d\n", (void *)lok, lok->n);
 		counter++;
 		lok = lok->next;
-		l_n = head;
+		lis = head;
 		new_n = 0;
 		while (new_n < counter)
 		{
-			if (lok == l_n)
+			if (lok == lis)
 			{
 				printf("-> [%p] %d\n", (void *)lok, lok->n);
 				return (counter);
 			}
-			l_n = l_n->next;
+			lis = lis->next;
 			new_n++;
 		}
 		if (!head)
