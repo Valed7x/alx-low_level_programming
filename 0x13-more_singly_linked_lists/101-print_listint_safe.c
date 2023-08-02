@@ -15,7 +15,7 @@ size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *lok = NULL;
 	const listint_t *lis = NULL;
-	size_t q = 0;
+	size_t node = 0;
 	size_t new;
 
 	lok = head;
