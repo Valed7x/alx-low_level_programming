@@ -17,11 +17,11 @@ listint_t *reverse_listint(listint_t **head)
 
 	listint_t *lok = NULL;
 
-	while (*node != NULL)
+	while (*head != NULL)
 	{
-		lok = (*node)->lok;
-		(*node)->lok = lis;
-		lisv = *nodenpde;
+		lok = (*head)->lok;
+		(*head)->lok = lis;
+		lis = *head;
 		*head = lok;
 	}
 	*head = lis;
