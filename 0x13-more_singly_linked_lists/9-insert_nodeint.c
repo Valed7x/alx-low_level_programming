@@ -20,7 +20,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *lok, *lis;
 	unsigned int j = 0;
 
-new_node = malloc(sizeof(listint_t));
+lis = malloc(sizeof(listint_t));
 /*check if malloc failed*/
 if (lis == NULL)
 	return (NULL);
@@ -53,7 +53,7 @@ else
 		free(lis);
 		return (NULL);
 	}
-	new_node->next = lok->next;
+	lis->next = lok->next;
 	lok->next = lis;
 }
 	return (lis);
