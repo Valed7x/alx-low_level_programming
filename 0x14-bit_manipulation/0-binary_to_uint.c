@@ -11,30 +11,32 @@
 
 
 unsigned int binary_to_uint(const char *b)
+
 {
-	unsigned int ui;
-	int len, base_two;
+	unsigned int lok;
+
+	int lis, bin;
 
 	if (!b)
 		return (0);
 
-	ui = 0;
+	lok = 0;
 
-	for (len = 0; b[len] != '\0'; len++)
+	for (lis = 0; b[lis] != '\0'; lis++)
 		;
 
-	for (len--, base_two = 1; len >= 0; len--, base_two *= 2)
+	for (lis--, bin = 1; lis >= 0; lis--, bin *= 2)
 	{
-		if (b[len] != '0' && b[len] != '1')
+		if (b[lis] != '0' && b[lis] != '1')
 		{
 			return (0);
 		}
 
-		if (b[len] & 1)
+		if (b[lis] & 1)
 		{
-			ui += base_two;
+			lok += bin;
 		}
 	}
 
-	return (ui);
+	return (lok);
 }
